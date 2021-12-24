@@ -1,0 +1,259 @@
+.event-page-component {
+    overflow: hidden;
+}
+
+.event_title {
+    position: relative;
+    font-weight: 250;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #010101;
+    padding: 40px 0;
+}
+
+.event_title:after {
+    position: absolute;
+    content: '';
+    width: 240px;
+    height: 1px;
+    background: #222222;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flexable__ladyG_container {
+    margin: 80px 5.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ladyBlock {
+    width: 100%;
+}
+
+.ladyBgImg {
+    position: relative;
+    z-index: 20;
+    background: url("./img/ladyGaga.jpg") no-repeat center;
+    background-size: cover;
+    height: 974px;
+    width: 100%;
+}
+
+.lady-bg-rec {
+    float: right;
+    margin: 25px 0;
+    width: 100%;
+    height: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lady-bg-rec div {
+    background: #CCAD7B;
+    height: 100%;
+}
+
+.lady-bg-rec div:nth-child(1) {
+    width: 65.6%;
+}
+
+.lady-bg-rec div:nth-child(2) {
+    width: 9.2%;
+}
+
+.lady-bg-rec div:nth-child(3) {
+    width: 6.6%;
+}
+
+.lady-bg-rec div:nth-child(4) {
+    width: 5.2%;
+}
+
+.lady-bg-rec div:nth-child(5) {
+    width: 2.6%;
+}
+
+.ladyParagraphs {
+    margin: 20px 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #010101;
+}
+
+.container__flex__item:first-child {
+    position: relative;
+    width: 45%;
+}
+
+.container__flex__item:last-child {
+    position: relative;
+    width: 38%;
+}
+
+.is-color-light {
+    margin: 0;
+    color: #A1A1A1;
+}
+
+.container__flex__item:last-child .lady-bg-rec {
+    margin: 64px 0 64px 0;
+}
+
+.container__flex__item:last-child .ladyParagraphs {
+    margin: 32px 0;
+}
+
+.wine-parent-b {
+    position: relative;
+}
+
+.wineBgImg {
+    z-index: 20;
+    position: relative;
+    margin: 64px 0 0 0;
+    background: url('./img/flex-item-img2.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 744px;
+}
+
+.orangeBg {
+    z-index: 2;
+    position: absolute;
+    background: #CCAD7B;
+}
+
+.container__flex__item:first-child .orangeBg {
+    height: 646px;
+    width: 100%;
+    top: 64px;
+    left: -50%;
+}
+
+.container__flex__item:last-child .orangeBg {
+    z-index: 3;
+    position: absolute;
+    height: 765px;
+    width: 580px;
+    top: 59px;
+    left: 60px;
+}
+
+@media screen and (max-width: 1490px) {
+    .container__flex__item:last-child {
+        width: 44%;
+    }
+
+    .container__flex__item:first-child {
+        width: 48%;
+    }
+
+    .ladyBgImg {
+        height: 764px;
+    }
+
+    .wineBgImg {
+        height: 580px !important;
+    }
+
+    .container__flex__item:first-child .orangeBg {
+        height: 503px;
+    }
+
+    .container__flex__item:last-child .orangeBg {
+        height: 597px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .container__flex__item:last-child {
+        width: 44%;
+    }
+
+    .container__flex__item:first-child {
+        width: 48%;
+    }
+
+    .ladyBgImg {
+        height: 595px;
+    }
+
+    .wineBgImg {
+        margin: 30px 0 0 0;
+        height: 452px !important;
+    }
+
+    .container__flex__item:first-child .orangeBg {
+        height: 392px;
+    }
+
+    .container__flex__item:last-child .orangeBg {
+        height: 452px;
+    }
+
+    .container__flex__item:last-child .lady-bg-rec {
+        margin: 30px 0;
+    }
+
+    .ladyBlock .ladyParagraphs {
+        margin: 14px 0;
+    }
+}
+
+@media screen and (max-width: 609px) {
+    .flexable__ladyG_container {
+        flex-direction: column;
+    }
+
+    .flexable__ladyG_container .container__flex__item {
+        width: 100%;
+    }
+
+    .container__flex__item:last-child .orangeBg {
+        height: 452px;
+    }
+
+    .wineBgImg {
+        height: 720px !important;
+    }
+
+    .container__flex__item:first-child .orangeBg {
+        height: 628px;
+    }
+
+    .container__flex__item:last-child .orangeBg {
+        height: 710px;
+    }
+
+    .ladyBgImg {
+        height: 818px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .ladyBgImg {
+        height: 440px;
+    }
+
+    .container__flex__item:first-child .orangeBg {
+        height: 320px;
+    }
+
+    .wineBgImg {
+        margin: 30px 0 0 0;
+        height: 480px !important;
+    }
+
+    .container__flex__item:last-child .orangeBg {
+        height: 480px;
+        top: 24px;
+    }
+}

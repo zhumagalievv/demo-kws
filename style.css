@@ -1,0 +1,962 @@
+body {
+    margin: 0;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.header__nav {
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .nav__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__logo {
+    margin-top: 48px;
+    margin-bottom: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__list li {
+    margin: 0 40px;
+}
+
+.menu__list li a {
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+}
+
+.banner__bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./img/banner.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bg__content {
+    max-width: 872px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.grid__container {
+    height: auto;
+    display: grid;
+    grid-template-areas: "block1 cont__cont" "block4 cont__cont";
+    grid-template-rows: 0.75fr 1.25fr;
+    grid-template-columns: 1fr 1fr;
+    /*border: 1px solid black;*/
+    gap: 56px 78px;
+}
+
+.container__container {
+    grid-area: cont__cont;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(min-content, max-content) 1fr;
+}
+
+
+.container__container .container__block:first-child {
+    margin-bottom: 56px;
+}
+
+.block1 {
+
+    grid-area: block1;
+}
+
+.block4 {
+
+}
+
+/*-----------------Block 1-------------------------------*/
+.block-bg-orange {
+    padding-left: 11.6%;
+    padding-top: 14%;
+    height: 529px;
+    background: #CCAD7B;
+}
+
+.block-bg-img {
+    background: url("./img/brands.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.left-side {
+    padding-left: 11.6%;
+}
+
+.block-content {
+    overflow: hidden;
+}
+
+.block-content h2 {
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #010101;
+}
+
+.block-content span {
+    margin-top: 32px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #A2A2A2;
+}
+
+.block-content p {
+    margin-top: 16px;
+    max-width: 558px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #010101;
+}
+
+.block-content button {
+    margin: 56px 0 0 0;
+    cursor: pointer;
+    height: 56px;
+    width: 320px;
+    background: white;
+    text-align: center;
+    border: 1px solid #C1C1C1;
+    border-radius: 2px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    color: #010101;
+}
+
+/*--------------------Grid block 2---------------------*/
+.block-absolute-img {
+    height: 615px;
+    padding-top: 65px;
+    position: relative;
+}
+
+.block-absolute-img .block-rectangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.block-absolute-img .block-img {
+    z-index: 10;
+    height: 64%;
+    width: 88.4%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("./img/about_company.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.block-absolute-img .block-rectangle div {
+    margin-left: 14%;
+}
+
+.block-absolute-img .block-rectangle div:nth-child(1) {
+    background: #CCAD7B;
+    height: 2.2%;
+}
+
+.block-absolute-img .block-rectangle div:nth-child(2) {
+    background: #CCAD7B;
+    height: 4.5%;
+}
+
+.block-absolute-img .block-rectangle div:nth-child(3) {
+    background: #C49955;
+    height: 8.4%;
+}
+
+.block-absolute-img .block-rectangle div:nth-child(4 ) {
+    background: #CCAD7B;
+    height: 78%;
+}
+
+.right-side {
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.container__block .right-side h2 {
+    text-align: right;
+    display: block;
+    width: 71%;
+    margin: -2px 0 0 0;
+    padding: 32px 11.6% 14px 0;
+    background: #CCAD7B;
+}
+
+.container__block .right-side span, p {
+    margin-right: 11.6%;
+}
+
+.container__block .right-side p {
+    text-align: right;
+    max-width: 490px;
+    margin-top: 16px;
+}
+
+.container__block .right-side button {
+    margin-right: 11.6%;
+}
+
+/*------------------Grid block 3---------------------------------*/
+.block3-flex-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.block3-fItem {
+    /*border: 1px solid darkviolet;*/
+}
+
+.block3-fItem:nth-child(1) {
+    flex-grow: 1;
+    position: relative;
+}
+
+.block3 {
+    height: 100%;
+}
+
+.fItem-bg {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #CCAD7B;
+    height: 90%;
+}
+
+.fItem-bg-img {
+    z-index: 20;
+    position: relative;
+    background: url("./img/wine.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 88.4%;
+}
+
+.block3-fItem .right-side h2 {
+    background: transparent;
+}
+
+/*------------------Grid block 4---------------------------------*/
+.limited-content-block {
+    margin-left: 11.6%;
+}
+
+.splited-blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.splited-blocks div {
+    background: #CCAD7B;
+    height: 64px;
+}
+
+.splited-blocks div:nth-child(1) {
+    width: 3%;
+}
+
+.splited-blocks div:nth-child(2) {
+    width: 5%;
+}
+
+.splited-blocks div:nth-child(3) {
+    width: 7%;
+}
+
+.splited-blocks div:nth-child(4) {
+    width: 9%;
+}
+
+.splited-blocks div:nth-child(5) {
+    width: 65%;
+}
+
+.container__block {
+    /*border: 3px solid black*/
+}
+
+.block4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.block4-item:last-child {
+    flex-grow: 1;
+}
+
+.block-bg-wine-img {
+    box-sizing: border-box;
+    padding-top: 56px;
+    position: relative;
+    height: 100%;
+}
+
+.wine-item-bg {
+    z-index: 1;
+    position: absolute;
+    top: 56px;
+    width: 100%;
+    background: #CCAD7B;
+    height: 80%;
+}
+
+.wine-item-bg-img {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    margin-left: 11.6%;
+    background: url("./img/phylosophy_comp.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/*------------------Second Grid Container----------------------------------*/
+
+.event-flex-title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 50px 5.5%;
+    /*border: 1px solid black;*/
+}
+
+.flex-title-item:first-child {
+    width: 20%;
+    height: 64px;
+    font-size: 30px;
+    line-height: 64px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #010101;
+}
+
+.flex-title-item:last-child {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-title-item:last-child div {
+    height: 100%;
+    background: #CCAD7B;
+}
+
+.flex-title-item:last-child div:nth-child(1) {
+    width: 2.6%;
+}
+
+.flex-title-item:last-child div:nth-child(2) {
+    width: 6.1%;
+}
+
+.flex-title-item:last-child div:nth-child(3) {
+    width: 6.5%;
+}
+
+.flex-title-item:last-child div:nth-child(4) {
+    width: 9.2%;
+}
+
+.flex-title-item:last-child div:nth-child(5) {
+    width: 65.6%;
+}
+
+.event-grid-box {
+    margin: 5px 5.6%;
+    height: auto;
+    display: grid;
+    grid-template-areas: "eventGrid1 event__cont" "eventGrid2 event__cont";
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /*border: 1px solid black;*/
+    gap: 56px 78px;
+}
+
+.event-grid-container {
+    grid-area: event__cont;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr;*/
+    /*grid-auto-rows: minmax(min-content, max-content) 1fr;*/
+    /*border: 1px solid black;*/
+}
+
+.event-grid-item {
+    /*border: 1px solid blue;*/
+}
+
+.item-bg-img-block1 {
+    background: url("./img/ladyGaga.jpg") no-repeat center;
+    background-size: cover;
+    height: 974px;
+}
+
+.flex-grid-item {
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.grid-flex-tx {
+    margin-bottom: 40px;
+    width: 45%;
+    height: max-content;
+}
+
+.grid-flex-tx:nth-child(1) {
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.grid-flex-tx:nth-child(2) {
+    align-self: end;
+    justify-self: end;
+}
+
+.item-bg-img-block2a {
+    width: 100%;
+    background: url("./img/riedel1.jpg") no-repeat center;
+    background-size: cover;
+    height: 410px;
+}
+
+.item-bg-img-block2b {
+    width: 100%;
+    background: url("./img/riedel2.jpg") no-repeat center;
+    background-size: cover;
+    height: 410px;
+}
+
+.item-bg-img-block3 {
+    background: url("./img/ardbeg.jpg") no-repeat center;
+    background-size: cover;
+    height: 874px;
+}
+
+.grid-block4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-bg-img-block4 {
+    flex: 1 1 auto;
+    background: url("./img/asia-awards.jpg") no-repeat center;
+    background-size: cover;
+    height: 438px;
+}
+
+.grid-item1-content {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: inherit;
+    height: 40px;
+}
+
+.grid-item-title {
+    margin-left: 16px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #010101
+}
+
+.grid-item-rec-parent {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 96px;
+    /*border: 1px solid red;*/
+}
+
+.grid-item1-content {
+    width: 100%;
+    height: 52px;
+    /*border: 1px solid blue;*/
+}
+
+.flex-item-rec {
+    height: 30px;
+    background: #C49955;
+    margin-right: 16px;
+    width: 8px;
+}
+
+.grid-item-rec {
+    background: #CCAD7B;
+    margin-right: 16px;
+}
+
+.grid-item-rec:nth-child(1) {
+    width: 30px;
+}
+
+.grid-item-rec:nth-child(2) {
+    width: 16px;
+}
+
+.grid-item-rec:nth-child(3) {
+    width: 8px;
+}
+
+/*-----------------Brut Company Logo Style---------------------------------*/
+.brut {
+    margin: 120px 5.6% 80px 5.6%;
+    height: 90px;
+    background: #C49955;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.side-img {
+    background: url('./img/ABrut img.svg') no-repeat center;
+    background-size: contain;
+    width: 100px;
+    height: 100%;
+}
+
+.content-center {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-center-company-name {
+    background: url("./img/brut logo.svg") no-repeat center;
+    background-size: contain;
+    height: 100%;
+    width: 256px;
+}
+
+.content-content {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 391px;
+    color: #FFFFFF;
+}
+
+.content-button {
+    width: 320px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.minCont__block {
+    width: 100%;
+    height: 100%;
+}
+
+.minCont__block:first-child {
+    background: url("./img/brut logo.svg") no-repeat center;
+    background-size: auto;
+}
+
+.minCont__block:nth-child(2) {
+    font-weight: normal;
+    margin: 0 41px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.minCont__block:nth-child(3) {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    /*border: 1px solid white;*/
+    border-radius: 2px;
+}
+
+/*-----------------Footer Style--------------------------------------------*/
+.footer-container {
+    background: #222222;
+    padding: 40px 5.6% 24px 5.6%;
+}
+
+.footer-block:first-child {
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.footer-block:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-block-item:nth-child(1) {
+    flex-grow: 1.2;
+}
+
+.footer-block-item:nth-child(3) {
+    flex-grow: 1;
+}
+
+.footer-block-item:nth-child(3), .footer-block-item:nth-child(1) {
+    padding-top: 28px;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    color: #585858;
+    border-top: 1px solid #585858;
+}
+
+.footer-block-item:nth-child(2) {
+    margin: -42px 32px 0 32px;
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    align-self: center;
+}
+
+.footer-block-item:nth-child(2) img {
+    margin: 0 5px;
+}
+
+.footer-block-item:nth-child(3) {
+    text-align: right;
+}
+
+/*-----------------Media Query---------------------------------------------*/
+@media screen and (max-width: 1220px) {
+    .brut {
+        position: relative;
+        padding: 32px 16px;
+        box-sizing: border-box;
+        height: 295px;
+    }
+    .content-center{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content-center-company-name{
+        height: 56px;
+    }
+    .content-content{
+        max-width: 327px;
+
+    }
+    .content-button{
+        height: 56px;
+        max-width: 343px;
+    }
+    .side-img{
+        display: none;
+    }
+
+    .minCont__block:first-child {
+        margin-bottom: 25px;
+    }
+
+    .minCont__block:nth-child(3) {
+        margin-top: 8px;
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 1165px) {
+    .flex-title-item:last-child div {
+        height: 40px;
+    }
+
+    .splited-blocks div {
+        height: 40px;
+    }
+
+    .event-grid-box {
+        gap: 56px 30px !important;
+    }
+
+    .grid-flex-tx {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .event-flex-title {
+        margin: 50px 0;
+        flex-direction: column;
+    }
+
+    .flex-title-item:first-child {
+        margin: 15px 5.6%;
+        order: 2;
+    }
+
+    .flex-title-item:last-child {
+        width: 100%;
+        order: 1;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .banner__bg .bg__content {
+        width: 279px;
+        height: 216px;
+        font-size: 16px;
+    }
+
+    .grid__container {
+        grid-template-areas: "block1" "cont__cont" "block4";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    .block-bg-wine-img {
+        padding-top: 0;
+    }
+
+    .wine-item-bg {
+        top: 0;
+    }
+
+    .block4-item {
+        margin: 16px;
+    }
+
+    .block4-item button {
+        margin-bottom: 56px;
+    }
+
+    .block4-item:nth-child(1) {
+        order: 1
+    }
+
+    .block4-item:nth-child(2) {
+        order: 3
+    }
+
+    .block4-item:nth-child(3) {
+        order: 2
+    }
+
+    .block-bg-orange {
+        padding-left: 2%;
+        padding-top: 2%;
+    }
+
+    .left-side {
+        padding: 16px;
+    }
+
+    .block-content p {
+        /*margin: 0;*/
+        max-width: unset;
+    }
+
+    .block-content button {
+        width: 100%;
+    }
+
+    .block-absolute-img {
+        padding-top: unset;
+    }
+
+    .block-absolute-img .block-rectangle {
+        height: 60%;
+    }
+
+    .block-absolute-img .block-rectangle {
+        height: 100%;
+    }
+
+    .block-absolute-img .block-rectangle div {
+        margin-left: unset;
+    }
+
+    .block-absolute-img .block-rectangle div:nth-child(1) {
+        height: 3.2%;
+    }
+
+    .block-absolute-img .block-rectangle div:nth-child(2) {
+        height: 5.5%;
+    }
+
+    .block-absolute-img .block-rectangle div:nth-child(4 ) {
+        height: 75%;
+    }
+
+    .block-absolute-img .block-img {
+        height: 75%;
+        width: 96%;
+        margin: 2% 2% 0 2%;
+    }
+
+    .right-side {
+        align-items: flex-start;
+    }
+
+    .container__block .right-side h2,
+    .container__block .right-side span {
+        text-align: left;
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .container__block .right-side button, .container__block .right-side p {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .container__block .right-side p {
+        text-align: left;
+    }
+
+    .block3-fItem:nth-child(1) {
+        margin-left: 2%;
+    }
+
+    .fItem-bg-img {
+        width: 98%;
+    }
+
+    .block-bg-wine-img {
+        margin-right: 2%;
+    }
+
+    .wine-item-bg-img {
+        margin-left: 2%;
+        /*height: 530px;*/
+    }
+
+    .limited-content-block {
+        margin: 0;
+    }
+
+    /*--------------------Footer styles---------------------------------*/
+    .footer-block:last-child {
+        flex-direction: column;
+    }
+
+    .footer-block-item:nth-child(1) {
+        order: 2;
+        border: none;
+    }
+
+    .footer-block-item:nth-child(2) {
+        order: 1;
+        margin: 0;
+        border-bottom: 1px solid #585858;
+        padding-bottom: 29px;
+    }
+
+    .footer-block-item:nth-child(3) {
+        order: 3;
+        border: none;
+    }
+
+    /*    -----------------Second Grid Container --------------------------*/
+    .event-grid-box {
+        grid-template-areas: "eventGrid1" "event__cont" "eventGrid2";
+        grid-template-rows: max-content max-content max-content;
+        grid-template-columns: 1fr;
+        /*border: 1px solid black;*/
+    }
+
+    .item-bg-img-block1, .item-bg-img-block3, .item-bg-img-block4 {
+        height: 537px;
+    }
+
+
+    .flex-grid-item {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .grid-flex-tx {
+        width: 100%;
+    }
+
+    .grid-flex-tx:nth-child(1) {
+    }
+
+    .grid-flex-tx:nth-child(2) {
+    }
+}
